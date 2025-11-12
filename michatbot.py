@@ -71,7 +71,7 @@ def main():
     inicializar_estado()
     modelo = configurar_pagina()
     area_chat()  
-   mensaje = st.chat_input("Escribi tu mensaje:")
+    mensaje = st.chat_input("Escribi tu mensaje:")
 
 
     if mensaje:
@@ -88,6 +88,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
