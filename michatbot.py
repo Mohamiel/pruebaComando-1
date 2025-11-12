@@ -10,6 +10,7 @@ nombre = st.text_input("Pone tu nombre no wachin, o le tengo que hablar a la par
 if st.button("Despertar ⚰️"):
     
     st.write(f" {ascii} {nombre} ")
+   else st.write(f"prueba"):
 
 MODELOS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "deepseek-r1-distill-llama-70b"]
 
@@ -86,6 +87,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
