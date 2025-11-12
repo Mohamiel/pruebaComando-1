@@ -17,7 +17,7 @@ if st.button("Despertar ⚰️"):
 MODELOS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "deepseek-r1-distill-llama-70b"]
 
 def configurar_pagina():
-    st.title(Pregúntame lo que quieras saber🦍")
+    st.title(Pregúntame lo que quieras saber")
     st.sidebar.title("Configuracion de la IA")
 
     elegirModelo = st.sidebar.selectbox(
@@ -89,6 +89,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
