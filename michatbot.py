@@ -10,7 +10,7 @@ nombre = st.text_input("Pone tu nombre no wachin, o le tengo que hablar a la par
 if st.button("Despertar ⚰️"):
     
     st.write(f" {ascii} {nombre} ")
-   mensaje = st.chat_input("Escribi tu mensaje:")
+
 
 MODELOS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "deepseek-r1-distill-llama-70b"]
 
@@ -71,6 +71,8 @@ def main():
     inicializar_estado()
     modelo = configurar_pagina()
     area_chat()  
+   mensaje = st.chat_input("Escribi tu mensaje:")
+
 
     if mensaje:
         actualizar_historial("user", mensaje, "😁")
@@ -86,6 +88,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
