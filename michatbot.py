@@ -2,11 +2,7 @@ import streamlit as st
 from groq import Groq
 st.set_page_config(page_title="EL chat de Mateo", page_icon="🤖")
 st.title(
-"ChatBot de Mateo 
-       \    /\
-       )  ( ')
-      (  /  )
-       \(__)|.")
+"ChatBot Airaneitor3000")
 
 nombre = st.text_input("Cual es tu nombre?")
 if st.button("Saludar!"):
@@ -87,4 +83,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
