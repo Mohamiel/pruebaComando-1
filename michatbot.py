@@ -4,10 +4,7 @@ st.set_page_config(page_title="EL chat de Mateo", page_icon="🤖")
 st.title(
 "ChatBot Airaneitor3000")
 ascii = """
-"      \    /\
-       )  ( ')
-      (  /  )
-       \(__)|" 
+8==========D
    """
 nombre = st.text_input("Pone tu nombre no wachin, o le tengo que hablar a la pared?")
 if st.button("Despertar ⚰️"):
@@ -89,6 +86,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
