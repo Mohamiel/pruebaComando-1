@@ -3,15 +3,21 @@ from groq import Groq
 st.set_page_config(page_title="EL chat de Mateo", page_icon="🤖")
 st.title(
 "ChatBot Airaneitor3000")
-
-nombre = st.text_input("Cual es tu nombre?")
-if st.button("Saludar!"):
-    st.write(f"Hola {nombre}! Bienvenido a mi primer chatbot")
+ascii = """
+       \    /\
+       )  ( ')
+      (  /  )
+       \(__)| 
+   """
+nombre = st.text_input("Pone tu nombre no wachin, o le tengo que hablar a la pared?")
+if st.button("Despertar ⚰️"):
+    print ascii
+    st.write(f" {nombre} ")
 
 MODELOS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "deepseek-r1-distill-llama-70b"]
 
 def configurar_pagina():
-    st.title("Mi Chat de IA - Mateo ")
+    st.title(Pregúntame lo que quieras saber🦍")
     st.sidebar.title("Configuracion de la IA")
 
     elegirModelo = st.sidebar.selectbox(
@@ -83,5 +89,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
